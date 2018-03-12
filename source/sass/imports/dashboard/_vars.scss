@@ -1,0 +1,36 @@
+$bg-body:#162029;
+$bg-nav-black:#000;
+$bg-orange:#ff9a00;
+$bg-orange-dark:#ff6525;
+$bg-cyan:#abe6e8;
+$bg-lightest-white:#f5f5f5;
+$bg-panel:$bg-lightest-white;
+$bg-sidebar:#162029;
+$bg-desktop:#f45f7f;
+$bg-mobile:#f5983e;
+$bg-tablet:#2b98ce;
+$bg-tv:#98cd60;
+$bg-unknown:#999999;
+
+.bg-orange{background-color:$bg-orange;}
+.bg-orange-dark{background-color:$bg-orange-dark;}
+.bg-cyan{background-color:$bg-cyan;}
+
+.bg-nav-black{
+	background-color: $bg-nav-black;
+}
+.bg-desktop{
+	color: $bg-desktop;
+}
+.bg-mobile{
+	color: $bg-mobile;
+}
+.bg-tablet{
+	color: $bg-tablet;
+}
+.bg-tv{
+	color: $bg-tv;
+}
+.bg-unknown{
+	color: $bg-unknown;
+}

@@ -1,0 +1,414 @@
+{% extends 'templates/main.twig' %}
+
+{% block sidebar %}
+	{% include "templates/partials/sidebar.twig" %}
+{% endblock %}
+
+{% block panel %}
+	<section id="panel-area">
+			{% include "templates/partials/pageheaderwidgets.twig"%}
+			<div class="container-fluid ">
+				<!-- System Overview -->
+				<div class="panel-container ">
+					<div class="panel-main-title ">
+						<h2>System Overview</h2>
+					</div> <!-- panel-main-title -->
+					<div class="panel-main-body ">
+						<div class="row ">
+							<!-- Storage -->
+							<div class="col-lg-4">
+								<div class="panel-item ">
+									<div class="panel-item-title ">
+										<h3>Storage Usage</h3>
+									</div>
+									<div class="progress ">
+				                       <div class="progress-bar bg-info " style="width:65% " aria-value="65 " aria-valuenow="65 "  aria-valuemin="0 " aria-valuemax="200 ">65%</div>
+				                    </div> <!-- progress -->
+				                    <div class="usage ">
+				                        <div class="d-flex ">
+					                        <div class="col total-used px-0 ">
+					                            <span class="text-full-desc">Total : </span> <span class="text-short-desc">Tot. : </span>  130TB 
+					                               </div>
+					                        <div class="col allocation text-right px-0 ">
+					                            <span class="text-full-desc">Allowance : </span> <span class="text-short-desc">All. : </span> 200TB
+					                        </div>
+					                    </div>
+		                          	</div> <!-- usage -->
+		                          	 <div class="panel-item-subtitle ">
+                          			 	<h3>Usage by Type</h3>
+                          			 </div> <!-- panel-item-subtitle -->
+                          			 <div class="breakdowns ">
+		                          			 	<table class="table ">
+		                          			 		<thead>
+		                          			 			<tr>
+		                          			 				<th>Type</th>
+		                          			 				<th>Percent</th>
+		                          			 				<th>Usage</th>
+		                          			 			</tr>
+		                          			 		</thead>
+				                                    <tbody>
+													
+				                                      <tr>
+				                                        <td>{{Item}}</td>
+				                                        <td>50%</td>
+				                                        <td>15TB</td>
+				                                      </tr>
+				                                      <tr>
+				                                        <td>{{Item}}</td>
+				                                        <td>50%</td>
+				                                        <td>15TB</td>
+				                                      </tr>
+				                                      <tr>
+				                                        <td>{{Item}}</td>
+				                                        <td>50%</td>
+				                                        <td>15TB</td>
+				                                      </tr>
+				                                      
+				                                      <tfoot>
+				                                        <tr>
+				                                          <th colspan="2 " >Total</th>
+				                                          <th>200TB</th>
+				                                        </tr>
+				                                      </tfoot>
+				                                    </tbody>
+				                                </table>
+		                          	 </div> <!-- breakdowns -->
+		                          	 <div class="action-bar ">
+		                          	 	<button class="btn btn-block border-0 btn-primary btn-sm text-uppercase ">View Full Report</button>
+		                          	 </div> <!-- action-bar -->
+								</div> <!-- panel-item -->
+							</div>
+							<!-- CDN -->
+							<div class="col-lg-4">
+								<div class="panel-item ">
+									<div class="panel-item-title ">
+										<h3>CDN Usage</h3>
+									</div>
+									<div class="progress ">
+				                       <div class="progress-bar bg-success " style="width:45% " aria-valuenow="135 "  aria-valuemin="0 " aria-valuemax="300 ">45%</div>
+				                    </div> <!-- progress -->
+				                    <div class="usage ">
+				                        <div class="d-flex ">
+					                        <div class="col total-used px-0 ">
+					                           <span class="text-full-desc">Total : </span> <span class="text-short-desc">Tot. : </span> 135TB 
+					                               </div>
+					                        <div class="col allocation text-right px-0 ">
+					                            <span class="text-full-desc">Allowance : </span> <span class="text-short-desc">All. : </span>300TB
+					                        </div>
+					                    </div>
+		                          	</div> <!-- usage -->
+		                          	 <div class="panel-item-subtitle ">
+                          			 	<h3>Usage by Type</h3>
+                          			 </div> <!-- panel-item-subtitle -->
+                          			 <div class="breakdowns ">
+		                          			 	<table class="table ">
+		                          			 		<thead>
+		                          			 			<tr>
+		                          			 				<th>Type</th>
+		                          			 				<th>Percent</th>
+		                          			 				<th>Usage</th>
+		                          			 			</tr>
+		                          			 		</thead>
+				                                    <tbody>
+									
+				                                      <tr>
+				                                        <td>{{Item}}</td>
+				                                        <td>50%</td>
+				                                        <td>15TB</td>
+				                                      </tr>
+				                                      <tr>
+				                                        <td>{{Item}}</td>
+				                                        <td>50%</td>
+				                                        <td>15TB</td>
+				                                      </tr>
+				                                      <tr>
+				                                        <td>{{Item}}</td>
+				                                        <td>50%</td>
+				                                        <td>15TB</td>
+				                                      </tr>
+				                                      
+				                                      <tfoot>
+				                                        <tr>
+				                                          <th colspan="2 " >Total</th>
+				                                          <th>200TB</th>
+				                                        </tr>
+				                                      </tfoot>
+				                                    </tbody>
+				                                </table>
+		                          	 </div> <!-- breakdowns -->
+		                          	 <div class="action-bar ">
+		                          	 	<button class="btn btn-block border-0 btn-primary btn-sm text-uppercase ">View Full Report</button>
+		                          	 </div> <!-- action-bar -->
+								</div> <!-- panel-item -->
+							</div>
+							<!-- Encoding -->
+							<div class="col-lg-4">
+								<div class="panel-item ">
+									<div class="panel-item-title ">
+										<h3>Encoding</h3>
+									</div>
+									<div class="progress ">
+				                       <div class="progress-bar bg-orange " style="width:65% " aria-value="65 "  aria-valuemin="0 " aria-valuemax="100 ">65%</div>
+				                    </div> <!-- progress -->
+				                    <div class="usage ">
+				                        <div class="d-flex ">
+					                        <div class="col total-used px-0 ">
+					                            Total: 100TB
+					                               </div>
+					                        <div class="col allocation text-right px-0 ">
+					                           <span class="text-full-desc">Allowance : </span><span class="text-short-desc">All. : </span> 200TB
+					                        </div>
+					                    </div>
+		                          	</div> <!-- usage -->
+		                          	 <div class="panel-item-subtitle ">
+                          			 	<h3>Asset Usage</h3>
+                          			 </div> <!-- panel-item-subtitle -->
+                          			 <div class="breakdowns ">
+		                          			 	<table class="table ">
+		                          			 		<thead>
+		                          			 			<tr>
+		                          			 				<th>Type</th>
+		                          			 				<th>Percent</th>
+		                          			 				<th>Usage</th>
+		                          			 			</tr>
+		                          			 		</thead>
+				                                    <tbody>
+
+				                                      <tr>
+				                                        <td>{{Item}}</td>
+				                                        <td>50%</td>
+				                                        <td>15TB</td>
+				                                      </tr>
+				                                      <tr>
+				                                        <td>{{Item}}</td>
+				                                        <td>50%</td>
+				                                        <td>15TB</td>
+				                                      </tr>
+				                                      <tr>
+				                                        <td>{{Item}}</td>
+				                                        <td>50%</td>
+				                                        <td>15TB</td>
+				                                      </tr>
+				                                      
+				                                      <tfoot>
+				                                        <tr>
+				                                          <th colspan="2 " >Total</th>
+				                                          <th>200TB</th>
+				                                        </tr>
+				                                      </tfoot>
+				                                    </tbody>
+				                                </table>
+		                          	 </div> <!-- breakdowns -->
+		                          	 <div class="action-bar ">
+		                          	 	<button class="btn btn-block border-0 btn-primary btn-sm text-uppercase ">View Full Report</button>
+		                          	 </div> <!-- action-bar -->
+								</div> <!-- panel-item -->
+							</div>
+						</div>
+					</div> <!-- panel-main-body -->
+				</div> <!-- panel-container -->
+				<!-- Content Overview -->
+				<div class="panel-container">
+					<div class="panel-main-title ">
+						<h2>Content Overview</h2>
+					</div> <!-- panel-main-title -->
+					<div class="panel-main-body " id="content-body">
+						<div class="row ">
+							<!-- Storage -->
+							<div class="col-lg-4 col-sm-12 col-md-12 expandable">
+								<div class="panel-item ">
+									<div class="panel-item-title col-span-2 d-flex flex-row justify-content-between ">
+										<h3>Plays</h3>
+										<div class="expand-me"><span class="text-expand">Expand&nbsp;</span><a class="btn btn-sm btn-link expandizize"><i class="fa fa-expand fa-lg fa-fw "></i></a></div>
+									</div>
+									<div class="bar-container ">
+				                      	<span class="bar-plays ">5,3,9,6,5,9,7,3,5,3,9,6,5,9,7,6,8,7,9,3,5,2,9,6,5,9,7,3,9,6</span>
+				                    </div> <!-- bar-container -->
+				                    <div class="usage ">
+				                        <div class="d-flex ">
+					                        <div class="col total-used px-0 ">
+					                            <span class="text-full-desc">Avg View Time : </span> <span class="text-short-desc">AVT :</span> 12mins
+					                               </div>
+					                        <div class="col allocation text-right px-0 ">
+					                           <span class="text-full-desc">Total : </span> <span class="text-short-desc">Tot. : </span> 4,526,235
+					                        </div>
+					                    </div>
+		                          	</div> <!-- usage -->
+		                          	 <div class="panel-item-subtitle ">
+                          			 	<h3>By Asset Type</h3>
+                          			 </div> <!-- panel-item-subtitle -->
+                          			 <div class="breakdowns ">
+		                          			 	<table class="table ">
+		                          			 		<thead>
+		                          			 			<tr>
+		                          			 				<th>Type</th>
+		                          			 				<th>Percent</th>
+		                          			 				<th>Plays</th>
+		                          			 			</tr>
+		                          			 		</thead>
+				                                    <tbody>
+
+				                                      <tr>
+				                                        <td>{{Item}}</td>
+				                                        <td>50%</td>
+				                                        <td>15TB</td>
+				                                      </tr>
+				                                      <tr>
+				                                        <td>{{Item}}</td>
+				                                        <td>50%</td>
+				                                        <td>15TB</td>
+				                                      </tr>
+				                                      <tr>
+				                                        <td>{{Item}}</td>
+				                                        <td>50%</td>
+				                                        <td>15TB</td>
+				                                      </tr>
+				                                      
+				                                      <tfoot>
+				                                        <tr>
+				                                          <th colspan="2 " >Total</th>
+				                                          <th>200TB</th>
+				                                        </tr>
+				                                      </tfoot>
+				                                    </tbody>
+				                                </table>
+		                          	 </div> <!-- breakdowns -->
+		                          	 <div class="action-bar ">
+		                          	 	<button class="btn btn-block border-0 btn-primary btn-sm text-uppercase ">View Full Report</button>
+		                          	 </div> <!-- action-bar -->
+								</div> <!-- panel-item -->
+							</div>
+							<!-- CDN -->
+							<div class="col-lg-4 col-sm-12 col-md-12 expandable">
+								<div class="panel-item ">
+									<div class="panel-item-title col-span-2 d-flex flex-row justify-content-between ">
+										<h3>Content Views</h3>
+										<div class="expand-me"><span class="text-expand">Expand&nbsp;</span><a class="btn btn-sm btn-link expandizize"><i class="fa fa-expand fa-lg fa-fw "></i></a></div>
+									</div>
+									<div class="bar-container ">
+				                      	<span class="bar-content-views ">5,3,9,6,5,9,7,3,5,3,9,6,5,9,7,6,8,7,9,3,5,2,9,6,5,9,7,3,9,6</span>
+				                    </div> <!-- bar-container -->
+				                    <div class="usage ">
+				                        <div class="d-flex ">
+					                        <div class="col total-used px-0 ">
+					                            <span class="text-full-desc">Daily Average : </span> <span class="text-short-desc">D. Ave. : </span>40,603
+					                               </div>
+					                        <div class="col allocation text-right px-0 ">
+					                            <span class="text-full-desc">Total : </span> <span class="text-short-desc">Tot. : </span>452,026
+					                        </div>
+					                    </div>
+		                          	</div> <!-- usage -->
+		                          	 <div class="panel-item-subtitle ">
+                          			 	<h3>By Device Type</h3>
+                          			 </div> <!-- panel-item-subtitle -->
+                          			 <div class="breakdowns ">
+		                          			 	<table class="table ">
+		                          			 		<thead>
+		                          			 			<tr>
+		                          			 				<th>Type</th>
+		                          			 				<th>Percent</th>
+		                          			 				<th>Plays</th>
+		                          			 			</tr>
+		                          			 		</thead>
+				                                    <tbody>
+
+				                                      <tr>
+				                                        <td>{{Item}}</td>
+				                                        <td>50%</td>
+				                                        <td>15TB</td>
+				                                      </tr>
+				                                      <tr>
+				                                        <td>{{Item}}</td>
+				                                        <td>50%</td>
+				                                        <td>15TB</td>
+				                                      </tr>
+				                                      <tr>
+				                                        <td>{{Item}}</td>
+				                                        <td>50%</td>
+				                                        <td>15TB</td>
+				                                      </tr>
+				                                      
+				                                      <tfoot>
+				                                        <tr>
+				                                          <th colspan="2 " >Total</th>
+				                                          <th>200TB</th>
+				                                        </tr>
+				                                      </tfoot>
+				                                    </tbody>
+				                                </table>
+		                          	 </div> <!-- breakdowns -->
+		                          	 <div class="action-bar ">
+		                          	 	<button class="btn btn-block border-0 btn-primary btn-sm text-uppercase ">View Full Report</button>
+		                          	 </div> <!-- action-bar -->
+								</div> <!-- panel-item -->
+							</div>
+							<!-- Encoding -->
+							<div class="col-lg-4 col-sm-12 col-md-12 expandable">
+								<div class="panel-item ">
+									<div class="panel-item-title col-span-2 d-flex flex-row justify-content-between ">
+										<h3>By Apps</h3>
+										<div class="expand-me"><span class="text-expand">Expand&nbsp;</span><a class="btn btn-sm btn-link expandizize"><i class="fa fa-expand fa-lg fa-fw "></i></a></div>
+									</div>
+									<div class="bar-container ">
+				                      	<span class="bar-page-views ">5,3,9,6,5,9,7,3,5,3,9,6,5,9,7,6,8,7,9,3,5,2,9,6,5,9,7,3,9,6</span>
+				                    </div> <!-- bar-container -->
+				                    <div class="usage ">
+				                        <div class="d-flex ">
+					                        <div class="col total-used px-0 ">
+					                            <span class="text-full-desc">Daily Average : </span> <span class="text-short-desc">D. Ave. : </span> 40,603
+					                               </div>
+					                        <div class="col allocation text-right px-0 ">
+					                           <span class="text-full-desc">Total : </span> <span class="text-short-desc">Tot. : </span>452,026
+					                        </div>
+					                    </div>
+		                          	</div> <!-- usage -->
+		                          	 <div class="panel-item-subtitle ">
+                          			 	<h3>Asset Usage</h3>
+                          			 </div> <!-- panel-item-subtitle -->
+                          			 <div class="breakdowns ">
+		                          			 	<table class="table ">
+		                          			 		<thead>
+		                          			 			<tr>
+		                          			 				<th>Type</th>
+		                          			 				<th>Percent</th>
+		                          			 				<th>Plays</th>
+		                          			 			</tr>
+		                          			 		</thead>
+				                                    <tbody>
+
+				                                      <tr>
+				                                        <td>{{Item}}</td>
+				                                        <td>50%</td>
+				                                        <td>15TB</td>
+				                                      </tr>
+				                                      <tr>
+				                                        <td>{{Item}}</td>
+				                                        <td>50%</td>
+				                                        <td>15TB</td>
+				                                      </tr>
+				                                      <tr>
+				                                        <td>{{Item}}</td>
+				                                        <td>50%</td>
+				                                        <td>15TB</td>
+				                                      </tr>
+				                                      
+				                                      <tfoot>
+				                                        <tr>
+				                                          <th colspan="2 " >Total</th>
+				                                          <th>200TB</th>
+				                                        </tr>
+				                                      </tfoot>
+				                                    </tbody>
+				                                </table>
+		                          	 </div> <!-- breakdowns -->
+		                          	 <div class="action-bar ">
+		                          	 	<button class="btn btn-block border-0 btn-primary btn-sm text-uppercase ">View Full Report</button>
+		                          	 </div> <!-- action-bar -->
+								</div> <!-- panel-item -->
+							</div>
+						</div>
+					</div> <!-- panel-main-body -->
+				</div>
+			</div> <!-- container-fluid -->
+	</section>
+{% endblock %}

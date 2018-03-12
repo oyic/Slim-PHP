@@ -1,0 +1,20 @@
+{% htmlcompress %}
+{% spaceless %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% include "templates/partials/head.twig" %}
+		<link rel="stylesheet" href="/includes/css/app.css">
+	</head>
+	<body class="dashboard active>
+		
+		<div id="main-wrapper">
+			{% block content %}
+			{% endblock %}
+		</div> <!-- main-wrapper -->
+		
+	<script src="/includes/js/app.js"></script>
+	</body>
+</html>
+{% endspaceless %}
+{% endhtmlcompress %}

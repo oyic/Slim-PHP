@@ -1,0 +1,56 @@
+{% set bodyClass = 'login reset' %}
+{% extends 'templates/main.twig' %}
+{% block content %}
+<div class="login-container">
+    <div class="form-container row">
+        <div class="col-left" id="logo-area">
+            <figure>
+                <img src="/includes/images/GlueAdminLogin.png" alt="Logo" class="img-fluid">
+            </figure>
+        </div>
+        <!-- logo-area -->
+        <div class="col-right" id="form-area">
+            <div class="login-titles">
+                <h1>
+                    Glue<span>Analytics</span>
+                </h1>
+            </div>
+            <div class="description">
+                <h3 class="text-muted">Forgot your password? It happens.</h3>
+                Please enter the email address you use to access the system. We'll send you a link so you can create a new password.
+            </div>
+            <form action="/" class="form">
+
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+
+                <div class="button-container">
+                    <a href='#' type="submit" class="btn-login text-uppercase">Send Password Reset</a>
+                </div>
+                <div class="copy-rights text-muted">
+                    <p class="copy">Copyright&copy; 2018 Boomlabs</p>
+                    <p class="api-version">Glue API: Version 4.1</p>
+                </div>
+            </form>
+        </div>
+        <!-- form-area -->
+    </div>
+    <!-- form-container -->
+    <ul id="quicklinks" class="justify-content-around">
+        <li>
+            <a href="/">Support</a>
+        </li>
+        <li class='line-spacer'></li>
+        <li>
+            <a href="/">API Documentation</a>
+        </li>
+        <li class='line-spacer'></li>
+
+        <li>
+            <a href="/">Report an Issue</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

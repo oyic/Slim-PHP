@@ -1,0 +1,41 @@
+{% set bodyClass = 'login' %}
+{% extends 'templates/main.twig' %}
+{% block login %}
+ <div class="login-container">
+        <div class="form-container row">
+            <div class="col-left" id="logo-area">
+                <figure>
+                    <img src="/includes/images/GlueAdminLogin.png" alt="Logo" class="img-fluid">
+                </figure>
+            </div> <!-- logo-area -->
+            <div class="col-right" id="form-area">
+                <div class="login-titles">
+                    <h1>
+                        Glue<span>Analytics</span>
+                    </h1>
+                </div>
+                <form action="/" class="form">
+                    
+                    <div class="input-container">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+
+                    <div class="button-container">
+                        <a href='/forgotpassword.html' class="btn btn-link text-uppercase">Forgot?</a>
+                        <a href='#' type="submit" class="btn-login text-uppercase">Login</a>
+                    </div>
+                    {% include "templates/partials/copyrights.twig"%}
+                    
+                </form>
+            </div> <!-- form-area -->
+        </div> <!-- form-container -->
+        {% include "templates/partials/quicklinks.twig" %}
+       
+ </div>
+{% endblock %}

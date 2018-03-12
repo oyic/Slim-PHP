@@ -1,0 +1,13 @@
+{
+    "require": {
+        "slim/slim": "3.0",
+        "slim/twig-view": "^2.3",
+        "hassankhan/config": "^1.0",
+        "nochso/html-compress-twig": "^2.0"
+    },
+    "autoload":{
+    	"psr-4":{
+    		"Glue\\":"app"
+    	}
+    }
+}

@@ -1,0 +1,62 @@
+<div class="col-lg-4">
+	<div class="panel-item ">
+		<div class="panel-item-title ">
+			<h3>{{overviewTitle}}</h3>
+		</div>
+		<div class="progress ">
+           <div class="progress-bar bg-info " style="width:65% " aria-value="65 " aria-valuenow="65 "  aria-valuemin="0 " aria-valuemax="200 ">65%</div>
+        </div> <!-- progress -->
+        <div class="usage ">
+            <div class="d-flex ">
+                <div class="col total-used px-0 ">
+                    <span class="text-full-desc">Total : </span> <span class="text-short-desc">Tot. : </span>  130TB 
+                       </div>
+                <div class="col allocation text-right px-0 ">
+                    <span class="text-full-desc">Allowance : </span> <span class="text-short-desc">All. : </span> 200TB
+                </div>
+            </div>
+      	</div> <!-- usage -->
+      	 <div class="panel-item-subtitle ">
+			 	<h3>Usage by Type</h3>
+			 </div> <!-- panel-item-subtitle -->
+			 <div class="breakdowns ">
+      			 	<table class="table ">
+      			 		<thead>
+      			 			<tr>
+      			 				<th>Type</th>
+      			 				<th>Percent</th>
+      			 				<th>Usage</th>
+      			 			</tr>
+      			 		</thead>
+                        <tbody>
+						
+                          <tr>
+                            <td>{{Item}}</td>
+                            <td>50%</td>
+                            <td>15TB</td>
+                          </tr>
+                          <tr>
+                            <td>{{Item}}</td>
+                            <td>50%</td>
+                            <td>15TB</td>
+                          </tr>
+                          <tr>
+                            <td>{{Item}}</td>
+                            <td>50%</td>
+                            <td>15TB</td>
+                          </tr>
+                          
+                          <tfoot>
+                            <tr>
+                              <th colspan="2 " >Total</th>
+                              <th>200TB</th>
+                            </tr>
+                          </tfoot>
+                        </tbody>
+                    </table>
+      	 </div> <!-- breakdowns -->
+      	 <div class="action-bar ">
+      	 	<button class="btn btn-block border-0 btn-primary btn-sm text-uppercase ">View Full Report</button>
+      	 </div> <!-- action-bar -->
+	</div> <!-- panel-item -->
+</div>

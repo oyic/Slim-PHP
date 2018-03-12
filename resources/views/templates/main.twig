@@ -1,0 +1,31 @@
+{% htmlcompress %}
+{% spaceless %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% include "templates/partials/head.twig" %}
+		<link rel="stylesheet" href="/includes/css/app.css">
+	</head>
+	<body class="{{bodyClass ?:'dashboard active'}}">
+		{% if not bodyClass %}
+			{% include "templates/partials/header.twig" %}
+			<div id="main-wrapper">
+
+				{% block sidebar %}{% endblock %}
+				{% block panel %}{% endblock %}
+
+			</div>
+			<!-- main-wrapper -->
+		{% else %}
+			{% include "templates/partials/header-login.twig" %}
+			{% block login%}
+			{% endblock %}
+		{% endif %}
+
+		
+		
+	<script src="/includes/js/app.js"></script>
+	</body>
+</html>
+{% endspaceless %}
+{% endhtmlcompress %}

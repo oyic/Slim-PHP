@@ -1,0 +1,46 @@
+  <aside id="sidebar" class='align-self-around'>
+            <nav id="side-menu-list">
+                <ul class='nav'>
+                    <li class="main-item-menu dropdown open">
+                        <a href="#" class="item-link"><span class="icon-menu"><i class="fa fa-chart-area fa-lg fa-fw"></i></span>Dashboards<span class="dropdown-indicator-icon"><i class="fa fa-chevron-right"></i></span></a>
+                        <ul class="drop-list">
+                            <li class="sub-item-menu {% if current_route == '/' %} current {% endif%}">
+                                <a href="/" class="item-link">Overview</a>
+                            </li>
+                            <li class="sub-item-menu {% if current_route == 'engagement' %} current {% endif%}">
+                                <a href="/engagement" class="item-link">Engagement</a>
+                            </li>
+                            <li class="sub-item-menu {% if current_route == 'plays' %} current {% endif%}">
+                                <a href="/plays" class="item-link">Plays</a>
+                            </li>
+                            <li class="sub-item-menu {% if current_route == 'contents' %} current {% endif%}">
+                                <a href="/contents" class="item-link">Content Views</a>
+                            </li>
+                            <li class="sub-item-menu {% if current_route == 'site' %} current {% endif%}">
+                                <a href="/site" class="item-link">Site</a>
+                            </li>
+                            <li class="sub-item-menu {% if current_route == 'system' %} current {% endif%}">
+                                <a href="/system" class="item-link">System</a>
+                            </li>
+                            <li class="sub-item-menu {% if current_route == 'report' %} current {% endif%}">
+                                <a href="/report" class="item-link">Annual Report</a>
+                            </li>
+                        </ul>
+                    </li>
+                    {# <li class="main-item-menu dropdown">
+                        <a href="#" class="item-link"><span class="icon-menu"><i class="fa fa-video fa-lg fa-fw"></i></span>Encoder<span class="dropdown-indicator-icon"><i class="fa fa-chevron-right"></i></span></a>
+                        <ul class="drop-list">
+                            <li class="sub-item-menu"><a href="/live.html" class="item-link">Live</a></li>
+                            <li class="sub-item-menu"><a href="/radio.html" class="item-link">Radio</a></li>
+                            <li class="sub-item-menu"><a href="/ondemand.html" class="item-link">On Demand</a></li>
+                            
+                        </ul>
+                    </li> #}
+                    <li class="main-item-menu show-on-xs">
+                        <a href="#" class="item-link">
+									<span class="icon-menu "><i class="fa fa-user-circle fa-lg fa-fw "></i></span>Sign Out
+								</a>
+						</li>
+					</ul>
+				</nav>
+		</aside> <!-- sidebar -->
